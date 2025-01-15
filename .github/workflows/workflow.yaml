@@ -3,6 +3,9 @@ name: test-terraform-deploy
 on:
   push:
 
+permissions:
+  id-token: write
+
 jobs:
   job1:
     runs-on: ubuntu-latest
