@@ -6,6 +6,11 @@ on:
 permissions:
   id-token: write
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./terraform
+
 jobs:
   job1:
     runs-on: ubuntu-latest
